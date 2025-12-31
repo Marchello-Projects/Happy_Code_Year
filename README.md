@@ -1,54 +1,45 @@
 <img width="2728" height="1395" alt="Group 6" src="https://github.com/user-attachments/assets/4e1986b4-7776-4540-9e5a-966ef22f59a6" />
 
->[!INFO]
->A simple program that displays a Christmas tree decorated with ornaments (on which programming languages are written), with a garland and a New Year greeting
+## About the project:
+A simple program that displays a Christmas tree decorated with ornaments (on which programming languages are written), with a garland and a New Year greeting.
 
 ---
 
 ## Technology Stack:
+Used Python and the Pygame library to render the greeting card.
 
-Used Python and the Pygame library to render the greeting card
+---
 
->[!EXAMPLE] 
->```python
->running = True
->while running:
->    # Handle events (e.g., closing the window)
->    for event in pygame.event.get():
->        if event.type == pygame.QUIT:
->            running = False
->
->    # Fill the screen with black
->    SCREEN.fill(BLACK)
->
->    # Draw the blinking star
->    draw_star(star_pulse)
->    # Draw falling snow
->    draw_snow()
->    # Draw the tree
->    draw_tree()
->    # Draw the garland
->    draw_lights()
->    # Draw ornaments with programming languages
->    draw_toys()
->
->    # Update the star pulse
->    star_pulse += 0.08
->
->    # Update text color (title) via hue
->    hue += 0.005
->    if hue > 1:
->        hue = 0
->    draw_title(hue)
->
->    # Refresh the screen and set FPS
->    pygame.display.flip()
->    clock.tick(60)
->
-># Quit Pygame and exit the program
->pygame.quit()
->sys.exit()
->```  
+## Example:
+
+```python
+running = True
+while running:
+    # Handle events (e.g., closing the window)
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    SCREEN.fill(BLACK)
+    draw_star(star_pulse)
+    draw_snow()
+    draw_tree()
+    draw_lights()
+    draw_toys()
+
+    star_pulse += 0.08
+
+    hue += 0.005
+    if hue > 1:
+        hue = 0
+    draw_title(hue)
+
+    pygame.display.flip()
+    clock.tick(60)
+
+pygame.quit()
+sys.exit()
+```
 
 ---
 
