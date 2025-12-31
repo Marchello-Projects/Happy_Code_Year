@@ -3,12 +3,8 @@
 ## About the project:
 A simple program that displays a Christmas tree decorated with ornaments (on which programming languages are written), with a garland and a New Year greeting.
 
----
-
 ## Technology Stack:
 Used Python and the Pygame library to render the greeting card.
-
----
 
 ## Example:
 
