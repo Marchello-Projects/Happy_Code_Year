@@ -11,28 +11,39 @@ Used Python and the Pygame library to render the greeting card.
 ```python
 running = True
 while running:
-    # Handle events (e.g., closing the window)
+    # Process events (e.g., window close button)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
 
+    # Fill the screen with black color
     SCREEN.fill(BLACK)
+    
+    # Draw blinking star at the top of the tree
     draw_star(star_pulse)
+    # Draw falling snowflakes
     draw_snow()
+    # Draw the Christmas tree
     draw_tree()
+    # Draw garland lights
     draw_lights()
+    # Draw ornaments with programming languages
     draw_toys()
 
+    # Update star pulse for blinking effect
     star_pulse += 0.08
 
+    # Update text color (title) via hue rotation
     hue += 0.005
     if hue > 1:
         hue = 0
     draw_title(hue)
 
+    # Refresh the display and maintain 60 FPS
     pygame.display.flip()
     clock.tick(60)
 
+# Quit Pygame and exit the program
 pygame.quit()
 sys.exit()
 ```
