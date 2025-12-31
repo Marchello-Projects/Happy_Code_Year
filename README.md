@@ -1,6 +1,6 @@
 <img width="2728" height="1395" alt="Group 6" src="https://github.com/user-attachments/assets/4e1986b4-7776-4540-9e5a-966ef22f59a6" />
 
-> [!INFO]
+>[!INFO]
 >A simple program that displays a Christmas tree decorated with ornaments (on which programming languages are written), with a garland and a New Year greeting
 
 ---
@@ -9,7 +9,7 @@
 
 Used Python and the Pygame library to render the greeting card
 
-> [!EXAMPLE]
+>[!EXAMPLE] 
 >```python
 >running = True
 >while running:
