@@ -37,8 +37,6 @@ pygame.quit()
 sys.exit()
 ```
 
----
-
 ## Year Summary:
 
 Eight pet projects were created:
